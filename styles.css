@@ -1,0 +1,55 @@
+header {
+	text-align: center;
+	margin: 2%;
+}
+
+.container {
+	display: flex;
+	max-width: 1000px;
+	min-height: 20vh;
+	margin: 2% auto;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.table {
+	flex-basis: 49%;
+	text-align: center;
+	padding: 1%;
+}
+
+.table .row:nth-child(odd){
+	background-color: rgb(247,208,94);
+}
+.table .row:nth-child(even){
+	background-color: rgb(255,255,255);
+}
+
+.row.name {
+	padding: 2%;
+}
+
+.row.album {
+	width: 470px;
+	padding: 2%;
+	border-top: 2px solid gray;
+	border-bottom: 2px solid gray;
+	border-collapse: collapse;
+	margin-top: 2%;
+	display: flex;
+}
+
+.row.album div {
+	flex: 3;
+}
+
+.row.album .id {
+	flex: 1;
+	border-right: 1px solid black;
+}
+
+.highlight{
+	border: 2px solid gray;
+	z-index: 1;
+}
+
